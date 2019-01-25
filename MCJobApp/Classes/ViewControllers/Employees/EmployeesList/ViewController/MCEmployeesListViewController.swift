@@ -19,10 +19,20 @@ class MCEmployeesListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        
+        self.configureNavigationBar()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+    }
+
+    // MARK: Private Methods
+    // MARK: Navigation Bar
+    private func configureNavigationBar() -> Void {
+        self.navigationController?.isNavigationBarHidden = false
+        
+        self.title = ApplicationNavigationTitles.kEmployeesListNavigationTitle
     }
 
 

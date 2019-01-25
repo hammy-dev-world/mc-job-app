@@ -9,8 +9,10 @@
 import Foundation
 
 struct ApplicationStringConstants {
-    // MARK: Navigation Bar
+}
 
+struct ApplicationNavigationTitles {
+    static let kEmployeesListNavigationTitle = "Employees"
 }
 
 struct ApplicationNumberConstants {
