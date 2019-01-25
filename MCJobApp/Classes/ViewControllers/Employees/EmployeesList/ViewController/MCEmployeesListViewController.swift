@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MCEmployeesListViewController.swift
 //  MCJobApp
 //
 //  Created by Humayun Sohail on 1/25/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MCEmployeesListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
