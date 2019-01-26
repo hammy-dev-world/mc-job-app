@@ -34,6 +34,10 @@ struct ApplicationURLs {
 
 struct ApplicationInterfaceFilenames {
     static let kEmployeesListViewController = "MCEmployeesListView"
+    static let kEmployeeRowTableViewCell = "MCEmployeeRowTableViewCell"
+    static let kEmployeeGroupTableViewCell = "MCEmployeeGroupTableViewCell"
+
+
 }
 
 struct ApplicationAlertMessages {

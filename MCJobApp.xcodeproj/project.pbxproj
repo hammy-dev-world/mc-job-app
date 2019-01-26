@@ -13,6 +13,11 @@
 		5F10123321FB8DDE004F9A90 /* MCEmployeesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10123221FB8DDE004F9A90 /* MCEmployeesListViewController.swift */; };
 		5F10123521FB8E0A004F9A90 /* MCEmployeesListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F10123421FB8E0A004F9A90 /* MCEmployeesListView.xib */; };
 		5F10123721FB8F97004F9A90 /* MCEmployeesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10123621FB8F97004F9A90 /* MCEmployeesListView.swift */; };
+		5F10123F21FC4063004F9A90 /* MCEmployeesListTableViewDelegateDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10123A21FC4062004F9A90 /* MCEmployeesListTableViewDelegateDatasource.swift */; };
+		5F10124821FC4E09004F9A90 /* MCEmployeeGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F10124321FC4E09004F9A90 /* MCEmployeeGroupTableViewCell.xib */; };
+		5F10124921FC4E09004F9A90 /* MCEmployeeGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10124421FC4E09004F9A90 /* MCEmployeeGroupTableViewCell.swift */; };
+		5F10124A21FC4E09004F9A90 /* MCEmployeeRowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F10124621FC4E09004F9A90 /* MCEmployeeRowTableViewCell.xib */; };
+		5F10124B21FC4E09004F9A90 /* MCEmployeeRowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10124721FC4E09004F9A90 /* MCEmployeeRowTableViewCell.swift */; };
 		5FD9D75221FB828800E3B243 /* MCJobAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9D75121FB828800E3B243 /* MCJobAppTests.swift */; };
 		5FD9D75D21FB828800E3B243 /* MCJobAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9D75C21FB828800E3B243 /* MCJobAppUITests.swift */; };
 		5FD9D77E21FB83D000E3B243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9D76C21FB83D000E3B243 /* LaunchScreen.storyboard */; };
@@ -45,6 +50,11 @@
 		5F10123221FB8DDE004F9A90 /* MCEmployeesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeesListViewController.swift; sourceTree = "<group>"; };
 		5F10123421FB8E0A004F9A90 /* MCEmployeesListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCEmployeesListView.xib; sourceTree = "<group>"; };
 		5F10123621FB8F97004F9A90 /* MCEmployeesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeesListView.swift; sourceTree = "<group>"; };
+		5F10123A21FC4062004F9A90 /* MCEmployeesListTableViewDelegateDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeesListTableViewDelegateDatasource.swift; sourceTree = "<group>"; };
+		5F10124321FC4E09004F9A90 /* MCEmployeeGroupTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCEmployeeGroupTableViewCell.xib; sourceTree = "<group>"; };
+		5F10124421FC4E09004F9A90 /* MCEmployeeGroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeeGroupTableViewCell.swift; sourceTree = "<group>"; };
+		5F10124621FC4E09004F9A90 /* MCEmployeeRowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCEmployeeRowTableViewCell.xib; sourceTree = "<group>"; };
+		5F10124721FC4E09004F9A90 /* MCEmployeeRowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeeRowTableViewCell.swift; sourceTree = "<group>"; };
 		5FD9D73921FB828700E3B243 /* MCJobApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCJobApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD9D74D21FB828800E3B243 /* MCJobAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCJobAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD9D75121FB828800E3B243 /* MCJobAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCJobAppTests.swift; sourceTree = "<group>"; };
@@ -119,6 +129,7 @@
 		5F10122F21FB8DDE004F9A90 /* EmployeesList */ = {
 			isa = PBXGroup;
 			children = (
+				5F10123821FC4062004F9A90 /* TableView */,
 				5F10123021FB8DDE004F9A90 /* View */,
 				5F10123121FB8DDE004F9A90 /* ViewController */,
 			);
@@ -140,6 +151,50 @@
 				5F10123221FB8DDE004F9A90 /* MCEmployeesListViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5F10123821FC4062004F9A90 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				5F10123B21FC4062004F9A90 /* CustomCells */,
+				5F10123921FC4062004F9A90 /* DelegateDatasource */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		5F10123921FC4062004F9A90 /* DelegateDatasource */ = {
+			isa = PBXGroup;
+			children = (
+				5F10123A21FC4062004F9A90 /* MCEmployeesListTableViewDelegateDatasource.swift */,
+			);
+			path = DelegateDatasource;
+			sourceTree = "<group>";
+		};
+		5F10123B21FC4062004F9A90 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				5F10124221FC4E09004F9A90 /* EmployeeGroupCell */,
+				5F10124521FC4E09004F9A90 /* EmployeeRowCell */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		5F10124221FC4E09004F9A90 /* EmployeeGroupCell */ = {
+			isa = PBXGroup;
+			children = (
+				5F10124421FC4E09004F9A90 /* MCEmployeeGroupTableViewCell.swift */,
+				5F10124321FC4E09004F9A90 /* MCEmployeeGroupTableViewCell.xib */,
+			);
+			path = EmployeeGroupCell;
+			sourceTree = "<group>";
+		};
+		5F10124521FC4E09004F9A90 /* EmployeeRowCell */ = {
+			isa = PBXGroup;
+			children = (
+				5F10124721FC4E09004F9A90 /* MCEmployeeRowTableViewCell.swift */,
+				5F10124621FC4E09004F9A90 /* MCEmployeeRowTableViewCell.xib */,
+			);
+			path = EmployeeRowCell;
 			sourceTree = "<group>";
 		};
 		5FD9D73021FB828700E3B243 = {
@@ -366,6 +421,8 @@
 			files = (
 				5F10122421FB8580004F9A90 /* .gitignore in Resources */,
 				5FD9D77E21FB83D000E3B243 /* LaunchScreen.storyboard in Resources */,
+				5F10124821FC4E09004F9A90 /* MCEmployeeGroupTableViewCell.xib in Resources */,
+				5F10124A21FC4E09004F9A90 /* MCEmployeeRowTableViewCell.xib in Resources */,
 				5F10123521FB8E0A004F9A90 /* MCEmployeesListView.xib in Resources */,
 				5FD9D78021FB83D000E3B243 /* Assets.xcassets in Resources */,
 				5FD9D77F21FB83D000E3B243 /* Main.storyboard in Resources */,
@@ -394,10 +451,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F10123321FB8DDE004F9A90 /* MCEmployeesListViewController.swift in Sources */,
+				5F10123F21FC4063004F9A90 /* MCEmployeesListTableViewDelegateDatasource.swift in Sources */,
 				5FD9D78221FB83D000E3B243 /* AppDelegate.swift in Sources */,
 				5F10122721FB8BDD004F9A90 /* AppDelegate+Navigation.swift in Sources */,
+				5F10124B21FC4E09004F9A90 /* MCEmployeeRowTableViewCell.swift in Sources */,
 				5F10123721FB8F97004F9A90 /* MCEmployeesListView.swift in Sources */,
 				5F10122B21FB8CCD004F9A90 /* ApplicationConstants.swift in Sources */,
+				5F10124921FC4E09004F9A90 /* MCEmployeeGroupTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@ import UIKit
 
 class MCEmployeesListView: UIView {
     // MARK: Outlets
+    @IBOutlet weak var employeesListTableView: UITableView!
 
     //MARK: Callbacks
 
