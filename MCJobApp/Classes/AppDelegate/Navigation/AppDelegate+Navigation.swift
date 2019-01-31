@@ -41,7 +41,7 @@ extension AppDelegate {
     
     public func moveToEmployeesListViewController() {
         let employeesListViewController = MCEmployeesListViewController(nibName: ApplicationInterfaceFilenames.kEmployeesListViewController, bundle: nil)
-        
+
         self.window?.rootViewController = self.initializeAppNavigationBarAppearance(viewController: employeesListViewController)
     }
 }

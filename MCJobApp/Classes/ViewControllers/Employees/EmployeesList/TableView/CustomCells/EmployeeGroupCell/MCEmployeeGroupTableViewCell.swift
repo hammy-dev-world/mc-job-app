@@ -1,5 +1,5 @@
 //
-//  EMSideMenuTableViewCell.swift
+//  MCEmployeeGroupTableViewCell.swift
 //  MCJobApp
 //
 //  Created by Humayun Sohail on 1/25/19.
@@ -10,8 +10,11 @@ import UIKit
 
 class MCEmployeeGroupTableViewCell: UITableViewCell {
     // MARK: Outlets
-    
+    @IBOutlet weak var positionHeaderLabel: UILabel!
+
     // MARK: Members
+    public var positionGroupName: String!
+
     public var section: Int!
     
     // MARK: Callbacks
@@ -31,6 +34,7 @@ class MCEmployeeGroupTableViewCell: UITableViewCell {
     
     // MARK: Content
     private func setContent() {
+        self.positionHeaderLabel.text = self.positionGroupName
     }
     
     // MARK: Images
@@ -48,4 +52,14 @@ class MCEmployeeGroupTableViewCell: UITableViewCell {
     
     // MARK: Public methods
     // MARK: Data
+    public func setPositionGroup(positionGroupName: String, section: Int) {
+        self.positionGroupName = positionGroupName
+        
+        self.section = section
+        
+        self.setContent()
+        self.setImages()
+        self.setView()
+    }
+
 }

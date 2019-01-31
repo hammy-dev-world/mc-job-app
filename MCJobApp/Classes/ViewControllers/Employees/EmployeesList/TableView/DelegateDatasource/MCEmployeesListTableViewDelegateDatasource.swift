@@ -1,5 +1,5 @@
 //
-//  EMSideMenuTableViewDelegateDatasource.swift
+//  MCEmployeesListTableViewDelegateDatasource.swift
 //  MCJobApp
 //
 //  Created by Humayun Sohail on 1/25/19.
@@ -20,22 +20,24 @@ struct EmployeesListTableViewConstants {
 
 class MCEmployeesListTableViewDelegateDatasource: NSObject, UITableViewDataSource, UITableViewDelegate {
     // MARK: Members
-    
+    public var employeesList: [(key: String, value: [MCEmployeeRootObject])] = []
+
     // MARK: Callbacks
 
     // MARK: Datasource
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 100
+        return self.employeesList.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        let employeesForSection = self.employeesList[section]
+        
+        return employeesForSection.value.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return self.tableView(tableView, cellForEmployeeRowAt: indexPath)
     }
-    
     
     // MARK: Delegates
     // MARK: Rows
@@ -81,12 +83,22 @@ class MCEmployeesListTableViewDelegateDatasource: NSObject, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForEmployeeGroupRowAsSectionAt section: Int) -> UITableViewCell {
         let cell: MCEmployeeGroupTableViewCell = (tableView.dequeueReusableCell(withIdentifier: ApplicationInterfaceFilenames.kEmployeeGroupTableViewCell) as? MCEmployeeGroupTableViewCell)!
 
+        let employeesForSection = self.employeesList[section]
+
+        cell.setPositionGroup(positionGroupName: employeesForSection.key, section: section)
+
         return cell
     }
 
     // MARK: Cell Views
     func tableView(_ tableView: UITableView, cellForEmployeeRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MCEmployeeRowTableViewCell = (tableView.dequeueReusableCell(withIdentifier: ApplicationInterfaceFilenames.kEmployeeRowTableViewCell, for: indexPath) as? MCEmployeeRowTableViewCell)!
+        
+        let employeesForSection = self.employeesList[indexPath.section]
+
+        let employee: MCEmployeeRootObject = employeesForSection.value[indexPath.row]
+                
+        cell.setEmployee(employeeRootObject: employee, row: indexPath.row)
         
         return cell
     }

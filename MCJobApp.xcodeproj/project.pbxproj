@@ -18,12 +18,32 @@
 		5F10124921FC4E09004F9A90 /* MCEmployeeGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10124421FC4E09004F9A90 /* MCEmployeeGroupTableViewCell.swift */; };
 		5F10124A21FC4E09004F9A90 /* MCEmployeeRowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F10124621FC4E09004F9A90 /* MCEmployeeRowTableViewCell.xib */; };
 		5F10124B21FC4E09004F9A90 /* MCEmployeeRowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10124721FC4E09004F9A90 /* MCEmployeeRowTableViewCell.swift */; };
+		5F10124E21FC5566004F9A90 /* MCEmployeesListHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10124D21FC5566004F9A90 /* MCEmployeesListHandler.swift */; };
+		5F5B4BB52200E81E00F957F3 /* ServiceEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B4BB42200E81E00F957F3 /* ServiceEndPoint.swift */; };
+		5F5B4BB72200E89800F957F3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B4BB62200E89800F957F3 /* HTTPMethod.swift */; };
+		5F5B4BB92200E8CA00F957F3 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B4BB82200E8CA00F957F3 /* HTTPTask.swift */; };
+		5F5B4BBC2200E9EA00F957F3 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B4BBB2200E9EA00F957F3 /* ParameterEncoding.swift */; };
+		5F5B4BBE2200EA8E00F957F3 /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B4BBD2200EA8E00F957F3 /* URLParameterEncoding.swift */; };
+		5F5B4BC02200EAC400F957F3 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B4BBF2200EAC400F957F3 /* JSONParameterEncoder.swift */; };
+		5F5B4BC42200EBD300F957F3 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B4BC32200EBD300F957F3 /* NetworkLogger.swift */; };
+		5F5B4BC62200EC4F00F957F3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B4BC52200EC4F00F957F3 /* Router.swift */; };
 		5FD9D75221FB828800E3B243 /* MCJobAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9D75121FB828800E3B243 /* MCJobAppTests.swift */; };
 		5FD9D75D21FB828800E3B243 /* MCJobAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9D75C21FB828800E3B243 /* MCJobAppUITests.swift */; };
 		5FD9D77E21FB83D000E3B243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9D76C21FB83D000E3B243 /* LaunchScreen.storyboard */; };
 		5FD9D77F21FB83D000E3B243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9D76E21FB83D000E3B243 /* Main.storyboard */; };
 		5FD9D78021FB83D000E3B243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9D77121FB83D000E3B243 /* Assets.xcassets */; };
 		5FD9D78221FB83D000E3B243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9D77B21FB83D000E3B243 /* AppDelegate.swift */; };
+		5FDB4BD422023C9400D4294F /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB4BD322023C9400D4294F /* NetworkConstants.swift */; };
+		5FDB4BEB2202433200D4294F /* NetworkOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB4BE62202433200D4294F /* NetworkOperationQueue.swift */; };
+		5FDB4BEC2202433200D4294F /* NetworkOperationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB4BE92202433200D4294F /* NetworkOperationBase.swift */; };
+		5FDB4BF32202441600D4294F /* TartuNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB4BF02202441600D4294F /* TartuNetworkManager.swift */; };
+		5FDB4BF42202441600D4294F /* TallinnNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB4BF22202441600D4294F /* TallinnNetworkManager.swift */; };
+		5FDB4BF72202447C00D4294F /* MCFetchTallinnEmployeesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB4BF62202447C00D4294F /* MCFetchTallinnEmployeesOperation.swift */; };
+		5FDB4BFD2202483A00D4294F /* NetworkResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB4BFC2202483A00D4294F /* NetworkResponseHandler.swift */; };
+		5FDB4C00220263DE00D4294F /* MCFetchTartuEmployeesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB4BFF220263DE00D4294F /* MCFetchTartuEmployeesOperation.swift */; };
+		5FF2A1AA2201DCB60098F42B /* MCEmployeesListRootObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF2A1A42201DCB60098F42B /* MCEmployeesListRootObject.swift */; };
+		5FF2A1AB2201DCB60098F42B /* MCEmployeeContactObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF2A1A72201DCB60098F42B /* MCEmployeeContactObject.swift */; };
+		5FF2A1AC2201DCB60098F42B /* MCEmployeeRootObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF2A1A92201DCB60098F42B /* MCEmployeeRootObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +75,15 @@
 		5F10124421FC4E09004F9A90 /* MCEmployeeGroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeeGroupTableViewCell.swift; sourceTree = "<group>"; };
 		5F10124621FC4E09004F9A90 /* MCEmployeeRowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCEmployeeRowTableViewCell.xib; sourceTree = "<group>"; };
 		5F10124721FC4E09004F9A90 /* MCEmployeeRowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeeRowTableViewCell.swift; sourceTree = "<group>"; };
+		5F10124D21FC5566004F9A90 /* MCEmployeesListHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeesListHandler.swift; sourceTree = "<group>"; };
+		5F5B4BB42200E81E00F957F3 /* ServiceEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEndPoint.swift; sourceTree = "<group>"; };
+		5F5B4BB62200E89800F957F3 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		5F5B4BB82200E8CA00F957F3 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		5F5B4BBB2200E9EA00F957F3 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		5F5B4BBD2200EA8E00F957F3 /* URLParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoding.swift; sourceTree = "<group>"; };
+		5F5B4BBF2200EAC400F957F3 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		5F5B4BC32200EBD300F957F3 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		5F5B4BC52200EC4F00F957F3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		5FD9D73921FB828700E3B243 /* MCJobApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCJobApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD9D74D21FB828800E3B243 /* MCJobAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCJobAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD9D75121FB828800E3B243 /* MCJobAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCJobAppTests.swift; sourceTree = "<group>"; };
@@ -67,6 +96,17 @@
 		5FD9D77121FB83D000E3B243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FD9D77B21FB83D000E3B243 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FD9D77D21FB83D000E3B243 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FDB4BD322023C9400D4294F /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		5FDB4BE62202433200D4294F /* NetworkOperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperationQueue.swift; sourceTree = "<group>"; };
+		5FDB4BE92202433200D4294F /* NetworkOperationBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperationBase.swift; sourceTree = "<group>"; };
+		5FDB4BF02202441600D4294F /* TartuNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TartuNetworkManager.swift; sourceTree = "<group>"; };
+		5FDB4BF22202441600D4294F /* TallinnNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TallinnNetworkManager.swift; sourceTree = "<group>"; };
+		5FDB4BF62202447C00D4294F /* MCFetchTallinnEmployeesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCFetchTallinnEmployeesOperation.swift; sourceTree = "<group>"; };
+		5FDB4BFC2202483A00D4294F /* NetworkResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseHandler.swift; sourceTree = "<group>"; };
+		5FDB4BFF220263DE00D4294F /* MCFetchTartuEmployeesOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCFetchTartuEmployeesOperation.swift; sourceTree = "<group>"; };
+		5FF2A1A42201DCB60098F42B /* MCEmployeesListRootObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeesListRootObject.swift; sourceTree = "<group>"; };
+		5FF2A1A72201DCB60098F42B /* MCEmployeeContactObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeeContactObject.swift; sourceTree = "<group>"; };
+		5FF2A1A92201DCB60098F42B /* MCEmployeeRootObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeeRootObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +169,7 @@
 		5F10122F21FB8DDE004F9A90 /* EmployeesList */ = {
 			isa = PBXGroup;
 			children = (
+				5F10124C21FC5566004F9A90 /* Handler */,
 				5F10123821FC4062004F9A90 /* TableView */,
 				5F10123021FB8DDE004F9A90 /* View */,
 				5F10123121FB8DDE004F9A90 /* ViewController */,
@@ -195,6 +236,49 @@
 				5F10124621FC4E09004F9A90 /* MCEmployeeRowTableViewCell.xib */,
 			);
 			path = EmployeeRowCell;
+			sourceTree = "<group>";
+		};
+		5F10124C21FC5566004F9A90 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				5F10124D21FC5566004F9A90 /* MCEmployeesListHandler.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		5F5B4BB22200E69200F957F3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5FDB4BFB2202481300D4294F /* Response */,
+				5FDB4BEE2202441600D4294F /* Managers */,
+				5FDB4BE32202433200D4294F /* Operations */,
+				5FDB4BD222023C8200D4294F /* Constants */,
+				5F5B4BBA2200E9CC00F957F3 /* Encoding */,
+				5F5B4BB32200E7B400F957F3 /* Servicing */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5F5B4BB32200E7B400F957F3 /* Servicing */ = {
+			isa = PBXGroup;
+			children = (
+				5F5B4BB42200E81E00F957F3 /* ServiceEndPoint.swift */,
+				5F5B4BB62200E89800F957F3 /* HTTPMethod.swift */,
+				5F5B4BB82200E8CA00F957F3 /* HTTPTask.swift */,
+				5F5B4BC32200EBD300F957F3 /* NetworkLogger.swift */,
+				5F5B4BC52200EC4F00F957F3 /* Router.swift */,
+			);
+			path = Servicing;
+			sourceTree = "<group>";
+		};
+		5F5B4BBA2200E9CC00F957F3 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				5F5B4BBB2200E9EA00F957F3 /* ParameterEncoding.swift */,
+				5F5B4BBD2200EA8E00F957F3 /* URLParameterEncoding.swift */,
+				5F5B4BBF2200EAC400F957F3 /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
 			sourceTree = "<group>";
 		};
 		5FD9D73021FB828700E3B243 = {
@@ -275,9 +359,11 @@
 		5FD9D77221FB83D000E3B243 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5F10122821FB8CCD004F9A90 /* Helpers */,
-				5FD9D77321FB83D000E3B243 /* ViewControllers */,
+				5FF2A1A12201DCB60098F42B /* Models */,
+				5F5B4BB22200E69200F957F3 /* Network */,
 				5FD9D77921FB83D000E3B243 /* AppDelegate */,
+				5FD9D77321FB83D000E3B243 /* ViewControllers */,
+				5F10122821FB8CCD004F9A90 /* Helpers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -313,6 +399,156 @@
 				5FD9D77D21FB83D000E3B243 /* Info.plist */,
 			);
 			path = ProjectSettings;
+			sourceTree = "<group>";
+		};
+		5FDB4BD222023C8200D4294F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5FDB4BD322023C9400D4294F /* NetworkConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		5FDB4BE32202433200D4294F /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				5FDB4BE42202433200D4294F /* Tartu */,
+				5FDB4BE72202433200D4294F /* Tallinn */,
+				5FDB4BE52202433200D4294F /* Queue */,
+				5FDB4BE82202433200D4294F /* Base */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		5FDB4BE42202433200D4294F /* Tartu */ = {
+			isa = PBXGroup;
+			children = (
+				5FDB4BFE220263DE00D4294F /* Employees */,
+			);
+			path = Tartu;
+			sourceTree = "<group>";
+		};
+		5FDB4BE52202433200D4294F /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				5FDB4BE62202433200D4294F /* NetworkOperationQueue.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		5FDB4BE72202433200D4294F /* Tallinn */ = {
+			isa = PBXGroup;
+			children = (
+				5FDB4BF52202446200D4294F /* Employees */,
+			);
+			path = Tallinn;
+			sourceTree = "<group>";
+		};
+		5FDB4BE82202433200D4294F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5FDB4BE92202433200D4294F /* NetworkOperationBase.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5FDB4BEE2202441600D4294F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5FDB4BEF2202441600D4294F /* Tartu */,
+				5FDB4BF12202441600D4294F /* Tallinn */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		5FDB4BEF2202441600D4294F /* Tartu */ = {
+			isa = PBXGroup;
+			children = (
+				5FDB4BF02202441600D4294F /* TartuNetworkManager.swift */,
+			);
+			path = Tartu;
+			sourceTree = "<group>";
+		};
+		5FDB4BF12202441600D4294F /* Tallinn */ = {
+			isa = PBXGroup;
+			children = (
+				5FDB4BF22202441600D4294F /* TallinnNetworkManager.swift */,
+			);
+			path = Tallinn;
+			sourceTree = "<group>";
+		};
+		5FDB4BF52202446200D4294F /* Employees */ = {
+			isa = PBXGroup;
+			children = (
+				5FDB4BF62202447C00D4294F /* MCFetchTallinnEmployeesOperation.swift */,
+			);
+			path = Employees;
+			sourceTree = "<group>";
+		};
+		5FDB4BFB2202481300D4294F /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				5FDB4BFC2202483A00D4294F /* NetworkResponseHandler.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		5FDB4BFE220263DE00D4294F /* Employees */ = {
+			isa = PBXGroup;
+			children = (
+				5FDB4BFF220263DE00D4294F /* MCFetchTartuEmployeesOperation.swift */,
+			);
+			path = Employees;
+			sourceTree = "<group>";
+		};
+		5FF2A1A12201DCB60098F42B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5FF2A1A22201DCB60098F42B /* Employees */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5FF2A1A22201DCB60098F42B /* Employees */ = {
+			isa = PBXGroup;
+			children = (
+				5FF2A1A52201DCB60098F42B /* Employee */,
+				5FF2A1A32201DCB60098F42B /* Root */,
+			);
+			path = Employees;
+			sourceTree = "<group>";
+		};
+		5FF2A1A32201DCB60098F42B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				5FF2A1A42201DCB60098F42B /* MCEmployeesListRootObject.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		5FF2A1A52201DCB60098F42B /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				5FF2A1A62201DCB60098F42B /* Contact */,
+				5FF2A1A82201DCB60098F42B /* Root */,
+			);
+			path = Employee;
+			sourceTree = "<group>";
+		};
+		5FF2A1A62201DCB60098F42B /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				5FF2A1A72201DCB60098F42B /* MCEmployeeContactObject.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		5FF2A1A82201DCB60098F42B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				5FF2A1A92201DCB60098F42B /* MCEmployeeRootObject.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,14 +686,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F5B4BB92200E8CA00F957F3 /* HTTPTask.swift in Sources */,
+				5FF2A1AA2201DCB60098F42B /* MCEmployeesListRootObject.swift in Sources */,
+				5FF2A1AB2201DCB60098F42B /* MCEmployeeContactObject.swift in Sources */,
+				5FDB4BEC2202433200D4294F /* NetworkOperationBase.swift in Sources */,
+				5F10124E21FC5566004F9A90 /* MCEmployeesListHandler.swift in Sources */,
 				5F10123321FB8DDE004F9A90 /* MCEmployeesListViewController.swift in Sources */,
+				5F5B4BB52200E81E00F957F3 /* ServiceEndPoint.swift in Sources */,
+				5F5B4BC62200EC4F00F957F3 /* Router.swift in Sources */,
+				5FDB4BFD2202483A00D4294F /* NetworkResponseHandler.swift in Sources */,
+				5F5B4BB72200E89800F957F3 /* HTTPMethod.swift in Sources */,
+				5FDB4BF32202441600D4294F /* TartuNetworkManager.swift in Sources */,
+				5F5B4BC02200EAC400F957F3 /* JSONParameterEncoder.swift in Sources */,
+				5FDB4BF42202441600D4294F /* TallinnNetworkManager.swift in Sources */,
 				5F10123F21FC4063004F9A90 /* MCEmployeesListTableViewDelegateDatasource.swift in Sources */,
+				5F5B4BBE2200EA8E00F957F3 /* URLParameterEncoding.swift in Sources */,
+				5FDB4BF72202447C00D4294F /* MCFetchTallinnEmployeesOperation.swift in Sources */,
 				5FD9D78221FB83D000E3B243 /* AppDelegate.swift in Sources */,
+				5FDB4C00220263DE00D4294F /* MCFetchTartuEmployeesOperation.swift in Sources */,
+				5F5B4BBC2200E9EA00F957F3 /* ParameterEncoding.swift in Sources */,
 				5F10122721FB8BDD004F9A90 /* AppDelegate+Navigation.swift in Sources */,
 				5F10124B21FC4E09004F9A90 /* MCEmployeeRowTableViewCell.swift in Sources */,
 				5F10123721FB8F97004F9A90 /* MCEmployeesListView.swift in Sources */,
 				5F10122B21FB8CCD004F9A90 /* ApplicationConstants.swift in Sources */,
+				5FF2A1AC2201DCB60098F42B /* MCEmployeeRootObject.swift in Sources */,
+				5FDB4BEB2202433200D4294F /* NetworkOperationQueue.swift in Sources */,
+				5F5B4BC42200EBD300F957F3 /* NetworkLogger.swift in Sources */,
 				5F10124921FC4E09004F9A90 /* MCEmployeeGroupTableViewCell.swift in Sources */,
+				5FDB4BD422023C9400D4294F /* NetworkConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

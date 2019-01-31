@@ -1,5 +1,5 @@
 //
-//  EMSideMenuTableViewCell.swift
+//  MCEmployeeRowTableViewCell.swift
 //  MCJobApp
 //
 //  Created by Humayun Sohail on 1/25/19.
@@ -10,10 +10,13 @@ import UIKit
 
 class MCEmployeeRowTableViewCell: UITableViewCell {
     // MARK: Outlets
-    
+    @IBOutlet weak var firstNameLabel: UILabel!
+
     // MARK: Members
-    public var section: Int!
+    public var row: Int!
     
+    public var employeeRootObject: MCEmployeeRootObject!
+
     // MARK: Callbacks
 
     // MARK: Init methods
@@ -31,6 +34,7 @@ class MCEmployeeRowTableViewCell: UITableViewCell {
     
     // MARK: Content
     private func setContent() {
+        self.firstNameLabel.text = self.employeeRootObject.firstName + " " + self.employeeRootObject.lastName
     }
     
     // MARK: Images
@@ -48,4 +52,14 @@ class MCEmployeeRowTableViewCell: UITableViewCell {
     
     // MARK: Public methods
     // MARK: Data
+    public func setEmployee(employeeRootObject: MCEmployeeRootObject, row: Int) {
+        self.employeeRootObject = employeeRootObject
+        
+        self.row = row
+        
+        self.setContent()
+        self.setImages()
+        self.setView()
+    }
+
 }
