@@ -13,19 +13,28 @@ struct ApplicationStringConstants {
 
 struct ApplicationNavigationTitles {
     static let kEmployeesListNavigationTitle = "Employees"
+    static let kEmployeeProfileNavigationTitle = "Profile"
+    static let kEmployeeContactViewNavigationTitle = "Contact View"
 }
 
 struct ApplicationNumberConstants {
     // MARK: Navigation Bar
+    static let kLeftBarButtonWidth = 30.0
+    static let kLeftBarButtonHeight = 30.0
+    
 }
 
 
 struct ApplicationKeyStrings {
-    // MARK: Caching
+    // MARK: Employees
+    static let kLocationKeyString = "location"
+
 }
 
 struct ApplicationResourceFilenames {
     // MARK: Navigation Bar
+    static let kNavigationBackButton = "back"
+    static let kNavigationCallButton = "call"
 
 }
 
@@ -37,11 +46,19 @@ struct ApplicationInterfaceFilenames {
     static let kEmployeeRowTableViewCell = "MCEmployeeRowTableViewCell"
     static let kEmployeeGroupTableViewCell = "MCEmployeeGroupTableViewCell"
 
-
+    static let kEmployeeProfileViewController = "MCEmployeeProfileView"
+    static let kEmployeeProfileHeaderTableViewCell = "MCEmployeeProfileHeaderTableViewCell"
+    static let kEmployeeProfileSectionTableViewCell = "MCEmployeeProfileSectionTableViewCell"
+    static let kEmployeeCallSectionTableViewCell = "MCEmployeeCallSectionTableViewCell"
 }
 
 struct ApplicationAlertMessages {
     // MARK: Common
 }
 
+struct EmployeeLocation {
+    static let kTallinnLocationName = "Tallinn"
+    static let kTartuLocationName = "Tartu"
+
+}
 

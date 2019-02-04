@@ -1,5 +1,5 @@
 //
-//  View.swift
+//  MCEmployeesListView.swift
 //  MCJobApp
 //
 //  Created by Humayun Sohail on 1/25/19.
@@ -12,6 +12,12 @@ import UIKit
 class MCEmployeesListView: UIView {
     // MARK: Outlets
     @IBOutlet weak var employeesListTableView: UITableView!
+    
+    @IBOutlet weak var refreshView: UIView!
+
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+
+    @IBOutlet weak var refreshViewTopConstraint: NSLayoutConstraint!
 
     //MARK: Callbacks
 

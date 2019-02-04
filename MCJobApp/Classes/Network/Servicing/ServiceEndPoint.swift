@@ -1,5 +1,5 @@
 //
-//  MCServiceEndPoint.swift
+//  ServiceEndPoint.swift
 //  MCJobApp
 //
 //  Created by Humayun Sohail on 1/29/19.

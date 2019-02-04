@@ -26,6 +26,8 @@ extension AppDelegate {
         navigationController.navigationBar.isTranslucent = false
         navigationController.isNavigationBarHidden = true
         
+        UINavigationBar.appearance().tintColor = .black
+        
         return navigationController
     }
     

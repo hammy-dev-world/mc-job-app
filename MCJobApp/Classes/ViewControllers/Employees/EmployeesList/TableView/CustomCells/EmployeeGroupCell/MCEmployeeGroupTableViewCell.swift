@@ -30,6 +30,7 @@ class MCEmployeeGroupTableViewCell: UITableViewCell {
     // MARK: Private methods
     // MARK: View
     private func configureView() {
+        self.backgroundColor = UIColor.employeeGroupBackgroundColor()
     }
     
     // MARK: Content

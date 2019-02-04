@@ -19,6 +19,28 @@
 		5F10124A21FC4E09004F9A90 /* MCEmployeeRowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F10124621FC4E09004F9A90 /* MCEmployeeRowTableViewCell.xib */; };
 		5F10124B21FC4E09004F9A90 /* MCEmployeeRowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10124721FC4E09004F9A90 /* MCEmployeeRowTableViewCell.swift */; };
 		5F10124E21FC5566004F9A90 /* MCEmployeesListHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10124D21FC5566004F9A90 /* MCEmployeesListHandler.swift */; };
+		5F1CFA0122072568004600D1 /* ApplicationButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CFA0022072568004600D1 /* ApplicationButtons.swift */; };
+		5F1CFA08220783F8004600D1 /* MCContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CFA07220783F8004600D1 /* MCContactViewController.swift */; };
+		5F1CFA0E22078780004600D1 /* ApplicationArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CFA0D22078780004600D1 /* ApplicationArrays.swift */; };
+		5F1CFA122207A641004600D1 /* MCEmployeeCallSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CFA102207A641004600D1 /* MCEmployeeCallSectionTableViewCell.swift */; };
+		5F1CFA132207A641004600D1 /* MCEmployeeCallSectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F1CFA112207A641004600D1 /* MCEmployeeCallSectionTableViewCell.xib */; };
+		5F27536D2204B9AC0065728B /* ApplicationColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F27536C2204B9AC0065728B /* ApplicationColors.swift */; };
+		5F30A2262205FDDE008A2699 /* MCEmployeeProfileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30A2162205FDDE008A2699 /* MCEmployeeProfileHandler.swift */; };
+		5F30A2272205FDDE008A2699 /* MCEmployeeProfileTableViewDelegateDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30A2192205FDDE008A2699 /* MCEmployeeProfileTableViewDelegateDatasource.swift */; };
+		5F30A2282205FDDE008A2699 /* MCEmployeeProfileSectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F30A21C2205FDDE008A2699 /* MCEmployeeProfileSectionTableViewCell.xib */; };
+		5F30A2292205FDDE008A2699 /* MCEmployeeProfileSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30A21D2205FDDE008A2699 /* MCEmployeeProfileSectionTableViewCell.swift */; };
+		5F30A22A2205FDDE008A2699 /* MCEmployeeProfileHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F30A21F2205FDDE008A2699 /* MCEmployeeProfileHeaderTableViewCell.xib */; };
+		5F30A22B2205FDDE008A2699 /* MCEmployeeProfileHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30A2202205FDDE008A2699 /* MCEmployeeProfileHeaderTableViewCell.swift */; };
+		5F30A22C2205FDDE008A2699 /* MCEmployeeProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F30A2222205FDDE008A2699 /* MCEmployeeProfileView.xib */; };
+		5F30A22D2205FDDE008A2699 /* MCEmployeeProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30A2232205FDDE008A2699 /* MCEmployeeProfileView.swift */; };
+		5F30A22E2205FDDE008A2699 /* MCEmployeeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30A2252205FDDE008A2699 /* MCEmployeeProfileViewController.swift */; };
+		5F30A23122060403008A2699 /* ApplicationBarButtonItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30A23022060403008A2699 /* ApplicationBarButtonItems.swift */; };
+		5F30A23A2206D43C008A2699 /* MCPhoneContactsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30A2392206D43C008A2699 /* MCPhoneContactsOperation.swift */; };
+		5F30A2402206D4F0008A2699 /* MCOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30A23D2206D4F0008A2699 /* MCOperationQueue.swift */; };
+		5F30A2412206D4F0008A2699 /* MCOperationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30A23F2206D4F0008A2699 /* MCOperationBase.swift */; };
+		5F30A2452206D9DB008A2699 /* MCPhoneContactRootObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30A2442206D9DB008A2699 /* MCPhoneContactRootObject.swift */; };
+		5F30A2482206E0C1008A2699 /* MCUtilitiesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30A2472206E0C1008A2699 /* MCUtilitiesClass.swift */; };
+		5F30A24B2206EEE9008A2699 /* ApplicationStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30A24A2206EEE9008A2699 /* ApplicationStrings.swift */; };
 		5F5B4BB52200E81E00F957F3 /* ServiceEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B4BB42200E81E00F957F3 /* ServiceEndPoint.swift */; };
 		5F5B4BB72200E89800F957F3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B4BB62200E89800F957F3 /* HTTPMethod.swift */; };
 		5F5B4BB92200E8CA00F957F3 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B4BB82200E8CA00F957F3 /* HTTPTask.swift */; };
@@ -34,8 +56,6 @@
 		5FD9D78021FB83D000E3B243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9D77121FB83D000E3B243 /* Assets.xcassets */; };
 		5FD9D78221FB83D000E3B243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9D77B21FB83D000E3B243 /* AppDelegate.swift */; };
 		5FDB4BD422023C9400D4294F /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB4BD322023C9400D4294F /* NetworkConstants.swift */; };
-		5FDB4BEB2202433200D4294F /* NetworkOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB4BE62202433200D4294F /* NetworkOperationQueue.swift */; };
-		5FDB4BEC2202433200D4294F /* NetworkOperationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB4BE92202433200D4294F /* NetworkOperationBase.swift */; };
 		5FDB4BF32202441600D4294F /* TartuNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB4BF02202441600D4294F /* TartuNetworkManager.swift */; };
 		5FDB4BF42202441600D4294F /* TallinnNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB4BF22202441600D4294F /* TallinnNetworkManager.swift */; };
 		5FDB4BF72202447C00D4294F /* MCFetchTallinnEmployeesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB4BF62202447C00D4294F /* MCFetchTallinnEmployeesOperation.swift */; };
@@ -76,6 +96,28 @@
 		5F10124621FC4E09004F9A90 /* MCEmployeeRowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCEmployeeRowTableViewCell.xib; sourceTree = "<group>"; };
 		5F10124721FC4E09004F9A90 /* MCEmployeeRowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeeRowTableViewCell.swift; sourceTree = "<group>"; };
 		5F10124D21FC5566004F9A90 /* MCEmployeesListHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeesListHandler.swift; sourceTree = "<group>"; };
+		5F1CFA0022072568004600D1 /* ApplicationButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationButtons.swift; sourceTree = "<group>"; };
+		5F1CFA07220783F8004600D1 /* MCContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCContactViewController.swift; sourceTree = "<group>"; };
+		5F1CFA0D22078780004600D1 /* ApplicationArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationArrays.swift; sourceTree = "<group>"; };
+		5F1CFA102207A641004600D1 /* MCEmployeeCallSectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeeCallSectionTableViewCell.swift; sourceTree = "<group>"; };
+		5F1CFA112207A641004600D1 /* MCEmployeeCallSectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCEmployeeCallSectionTableViewCell.xib; sourceTree = "<group>"; };
+		5F27536C2204B9AC0065728B /* ApplicationColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationColors.swift; sourceTree = "<group>"; };
+		5F30A2162205FDDE008A2699 /* MCEmployeeProfileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeeProfileHandler.swift; sourceTree = "<group>"; };
+		5F30A2192205FDDE008A2699 /* MCEmployeeProfileTableViewDelegateDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeeProfileTableViewDelegateDatasource.swift; sourceTree = "<group>"; };
+		5F30A21C2205FDDE008A2699 /* MCEmployeeProfileSectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCEmployeeProfileSectionTableViewCell.xib; sourceTree = "<group>"; };
+		5F30A21D2205FDDE008A2699 /* MCEmployeeProfileSectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeeProfileSectionTableViewCell.swift; sourceTree = "<group>"; };
+		5F30A21F2205FDDE008A2699 /* MCEmployeeProfileHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCEmployeeProfileHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		5F30A2202205FDDE008A2699 /* MCEmployeeProfileHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeeProfileHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		5F30A2222205FDDE008A2699 /* MCEmployeeProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCEmployeeProfileView.xib; sourceTree = "<group>"; };
+		5F30A2232205FDDE008A2699 /* MCEmployeeProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeeProfileView.swift; sourceTree = "<group>"; };
+		5F30A2252205FDDE008A2699 /* MCEmployeeProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCEmployeeProfileViewController.swift; sourceTree = "<group>"; };
+		5F30A23022060403008A2699 /* ApplicationBarButtonItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationBarButtonItems.swift; sourceTree = "<group>"; };
+		5F30A2392206D43C008A2699 /* MCPhoneContactsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCPhoneContactsOperation.swift; sourceTree = "<group>"; };
+		5F30A23D2206D4F0008A2699 /* MCOperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCOperationQueue.swift; sourceTree = "<group>"; };
+		5F30A23F2206D4F0008A2699 /* MCOperationBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCOperationBase.swift; sourceTree = "<group>"; };
+		5F30A2442206D9DB008A2699 /* MCPhoneContactRootObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPhoneContactRootObject.swift; sourceTree = "<group>"; };
+		5F30A2472206E0C1008A2699 /* MCUtilitiesClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUtilitiesClass.swift; sourceTree = "<group>"; };
+		5F30A24A2206EEE9008A2699 /* ApplicationStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationStrings.swift; sourceTree = "<group>"; };
 		5F5B4BB42200E81E00F957F3 /* ServiceEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEndPoint.swift; sourceTree = "<group>"; };
 		5F5B4BB62200E89800F957F3 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		5F5B4BB82200E8CA00F957F3 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
@@ -97,8 +139,6 @@
 		5FD9D77B21FB83D000E3B243 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FD9D77D21FB83D000E3B243 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FDB4BD322023C9400D4294F /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
-		5FDB4BE62202433200D4294F /* NetworkOperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperationQueue.swift; sourceTree = "<group>"; };
-		5FDB4BE92202433200D4294F /* NetworkOperationBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperationBase.swift; sourceTree = "<group>"; };
 		5FDB4BF02202441600D4294F /* TartuNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TartuNetworkManager.swift; sourceTree = "<group>"; };
 		5FDB4BF22202441600D4294F /* TallinnNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TallinnNetworkManager.swift; sourceTree = "<group>"; };
 		5FDB4BF62202447C00D4294F /* MCFetchTallinnEmployeesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCFetchTallinnEmployeesOperation.swift; sourceTree = "<group>"; };
@@ -145,6 +185,10 @@
 		5F10122821FB8CCD004F9A90 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				5F30A2462206E0A5008A2699 /* Utilities */,
+				5F30A23B2206D4F0008A2699 /* OperationQueue */,
+				5F30A2372206D43C008A2699 /* LocalOperations */,
+				5F27536A2204B9920065728B /* Extensions */,
 				5F10122921FB8CCD004F9A90 /* Constants */,
 			);
 			path = Helpers;
@@ -161,6 +205,7 @@
 		5F10122E21FB8DDE004F9A90 /* Employees */ = {
 			isa = PBXGroup;
 			children = (
+				5F30A2142205FDDE008A2699 /* EmployeeProfile */,
 				5F10122F21FB8DDE004F9A90 /* EmployeesList */,
 			);
 			path = Employees;
@@ -244,6 +289,229 @@
 				5F10124D21FC5566004F9A90 /* MCEmployeesListHandler.swift */,
 			);
 			path = Handler;
+			sourceTree = "<group>";
+		};
+		5F1CF9FF2207254D004600D1 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				5F1CFA0022072568004600D1 /* ApplicationButtons.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		5F1CFA05220783F8004600D1 /* ContactViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5F1CFA06220783F8004600D1 /* ViewController */,
+			);
+			path = ContactViewController;
+			sourceTree = "<group>";
+		};
+		5F1CFA06220783F8004600D1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5F1CFA07220783F8004600D1 /* MCContactViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5F1CFA0C2207876E004600D1 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				5F1CFA0D22078780004600D1 /* ApplicationArrays.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		5F1CFA0F2207A641004600D1 /* EmployeeCallSectionCell copy */ = {
+			isa = PBXGroup;
+			children = (
+				5F1CFA102207A641004600D1 /* MCEmployeeCallSectionTableViewCell.swift */,
+				5F1CFA112207A641004600D1 /* MCEmployeeCallSectionTableViewCell.xib */,
+			);
+			path = "EmployeeCallSectionCell copy";
+			sourceTree = "<group>";
+		};
+		5F27536A2204B9920065728B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5F1CFA0C2207876E004600D1 /* Array */,
+				5F1CF9FF2207254D004600D1 /* UIButton */,
+				5F30A2492206EED4008A2699 /* Strings */,
+				5F30A22F220603EA008A2699 /* UIBarButton */,
+				5F27536B2204B99D0065728B /* UIColor */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5F27536B2204B99D0065728B /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				5F27536C2204B9AC0065728B /* ApplicationColors.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		5F30A2142205FDDE008A2699 /* EmployeeProfile */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A2152205FDDE008A2699 /* Handler */,
+				5F30A2172205FDDE008A2699 /* TableView */,
+				5F30A2212205FDDE008A2699 /* View */,
+				5F30A2242205FDDE008A2699 /* ViewController */,
+			);
+			path = EmployeeProfile;
+			sourceTree = "<group>";
+		};
+		5F30A2152205FDDE008A2699 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A2162205FDDE008A2699 /* MCEmployeeProfileHandler.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		5F30A2172205FDDE008A2699 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A21A2205FDDE008A2699 /* CustomCells */,
+				5F30A2182205FDDE008A2699 /* DelegateDatasource */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		5F30A2182205FDDE008A2699 /* DelegateDatasource */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A2192205FDDE008A2699 /* MCEmployeeProfileTableViewDelegateDatasource.swift */,
+			);
+			path = DelegateDatasource;
+			sourceTree = "<group>";
+		};
+		5F30A21A2205FDDE008A2699 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				5F1CFA0F2207A641004600D1 /* EmployeeCallSectionCell copy */,
+				5F30A21B2205FDDE008A2699 /* EmployeeProfileSectionCell */,
+				5F30A21E2205FDDE008A2699 /* EmployeeProfileHeaderCell */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		5F30A21B2205FDDE008A2699 /* EmployeeProfileSectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A21D2205FDDE008A2699 /* MCEmployeeProfileSectionTableViewCell.swift */,
+				5F30A21C2205FDDE008A2699 /* MCEmployeeProfileSectionTableViewCell.xib */,
+			);
+			path = EmployeeProfileSectionCell;
+			sourceTree = "<group>";
+		};
+		5F30A21E2205FDDE008A2699 /* EmployeeProfileHeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A2202205FDDE008A2699 /* MCEmployeeProfileHeaderTableViewCell.swift */,
+				5F30A21F2205FDDE008A2699 /* MCEmployeeProfileHeaderTableViewCell.xib */,
+			);
+			path = EmployeeProfileHeaderCell;
+			sourceTree = "<group>";
+		};
+		5F30A2212205FDDE008A2699 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A2232205FDDE008A2699 /* MCEmployeeProfileView.swift */,
+				5F30A2222205FDDE008A2699 /* MCEmployeeProfileView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F30A2242205FDDE008A2699 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A2252205FDDE008A2699 /* MCEmployeeProfileViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5F30A22F220603EA008A2699 /* UIBarButton */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A23022060403008A2699 /* ApplicationBarButtonItems.swift */,
+			);
+			path = UIBarButton;
+			sourceTree = "<group>";
+		};
+		5F30A2372206D43C008A2699 /* LocalOperations */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A2382206D43C008A2699 /* PhoneContacts */,
+			);
+			path = LocalOperations;
+			sourceTree = "<group>";
+		};
+		5F30A2382206D43C008A2699 /* PhoneContacts */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A2392206D43C008A2699 /* MCPhoneContactsOperation.swift */,
+			);
+			path = PhoneContacts;
+			sourceTree = "<group>";
+		};
+		5F30A23B2206D4F0008A2699 /* OperationQueue */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A23C2206D4F0008A2699 /* Queue */,
+				5F30A23E2206D4F0008A2699 /* Base */,
+			);
+			path = OperationQueue;
+			sourceTree = "<group>";
+		};
+		5F30A23C2206D4F0008A2699 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A23D2206D4F0008A2699 /* MCOperationQueue.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		5F30A23E2206D4F0008A2699 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A23F2206D4F0008A2699 /* MCOperationBase.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5F30A2422206D9B9008A2699 /* PhoneContacts */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A2432206D9C1008A2699 /* Root */,
+			);
+			path = PhoneContacts;
+			sourceTree = "<group>";
+		};
+		5F30A2432206D9C1008A2699 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A2442206D9DB008A2699 /* MCPhoneContactRootObject.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		5F30A2462206E0A5008A2699 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A2472206E0C1008A2699 /* MCUtilitiesClass.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5F30A2492206EED4008A2699 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				5F30A24A2206EEE9008A2699 /* ApplicationStrings.swift */,
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 		5F5B4BB22200E69200F957F3 /* Network */ = {
@@ -371,6 +639,7 @@
 		5FD9D77321FB83D000E3B243 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5F1CFA05220783F8004600D1 /* ContactViewController */,
 				5F10122E21FB8DDE004F9A90 /* Employees */,
 			);
 			path = ViewControllers;
@@ -414,8 +683,6 @@
 			children = (
 				5FDB4BE42202433200D4294F /* Tartu */,
 				5FDB4BE72202433200D4294F /* Tallinn */,
-				5FDB4BE52202433200D4294F /* Queue */,
-				5FDB4BE82202433200D4294F /* Base */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -428,28 +695,12 @@
 			path = Tartu;
 			sourceTree = "<group>";
 		};
-		5FDB4BE52202433200D4294F /* Queue */ = {
-			isa = PBXGroup;
-			children = (
-				5FDB4BE62202433200D4294F /* NetworkOperationQueue.swift */,
-			);
-			path = Queue;
-			sourceTree = "<group>";
-		};
 		5FDB4BE72202433200D4294F /* Tallinn */ = {
 			isa = PBXGroup;
 			children = (
 				5FDB4BF52202446200D4294F /* Employees */,
 			);
 			path = Tallinn;
-			sourceTree = "<group>";
-		};
-		5FDB4BE82202433200D4294F /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				5FDB4BE92202433200D4294F /* NetworkOperationBase.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		5FDB4BEE2202441600D4294F /* Managers */ = {
@@ -504,6 +755,7 @@
 		5FF2A1A12201DCB60098F42B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5F30A2422206D9B9008A2699 /* PhoneContacts */,
 				5FF2A1A22201DCB60098F42B /* Employees */,
 			);
 			path = Models;
@@ -657,9 +909,13 @@
 			files = (
 				5F10122421FB8580004F9A90 /* .gitignore in Resources */,
 				5FD9D77E21FB83D000E3B243 /* LaunchScreen.storyboard in Resources */,
+				5F30A22C2205FDDE008A2699 /* MCEmployeeProfileView.xib in Resources */,
+				5F30A2282205FDDE008A2699 /* MCEmployeeProfileSectionTableViewCell.xib in Resources */,
 				5F10124821FC4E09004F9A90 /* MCEmployeeGroupTableViewCell.xib in Resources */,
 				5F10124A21FC4E09004F9A90 /* MCEmployeeRowTableViewCell.xib in Resources */,
+				5F30A22A2205FDDE008A2699 /* MCEmployeeProfileHeaderTableViewCell.xib in Resources */,
 				5F10123521FB8E0A004F9A90 /* MCEmployeesListView.xib in Resources */,
+				5F1CFA132207A641004600D1 /* MCEmployeeCallSectionTableViewCell.xib in Resources */,
 				5FD9D78021FB83D000E3B243 /* Assets.xcassets in Resources */,
 				5FD9D77F21FB83D000E3B243 /* Main.storyboard in Resources */,
 			);
@@ -686,32 +942,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F1CFA0122072568004600D1 /* ApplicationButtons.swift in Sources */,
+				5F30A2272205FDDE008A2699 /* MCEmployeeProfileTableViewDelegateDatasource.swift in Sources */,
 				5F5B4BB92200E8CA00F957F3 /* HTTPTask.swift in Sources */,
 				5FF2A1AA2201DCB60098F42B /* MCEmployeesListRootObject.swift in Sources */,
 				5FF2A1AB2201DCB60098F42B /* MCEmployeeContactObject.swift in Sources */,
-				5FDB4BEC2202433200D4294F /* NetworkOperationBase.swift in Sources */,
 				5F10124E21FC5566004F9A90 /* MCEmployeesListHandler.swift in Sources */,
 				5F10123321FB8DDE004F9A90 /* MCEmployeesListViewController.swift in Sources */,
 				5F5B4BB52200E81E00F957F3 /* ServiceEndPoint.swift in Sources */,
 				5F5B4BC62200EC4F00F957F3 /* Router.swift in Sources */,
+				5F30A22E2205FDDE008A2699 /* MCEmployeeProfileViewController.swift in Sources */,
 				5FDB4BFD2202483A00D4294F /* NetworkResponseHandler.swift in Sources */,
+				5F30A22D2205FDDE008A2699 /* MCEmployeeProfileView.swift in Sources */,
 				5F5B4BB72200E89800F957F3 /* HTTPMethod.swift in Sources */,
 				5FDB4BF32202441600D4294F /* TartuNetworkManager.swift in Sources */,
+				5F30A2292205FDDE008A2699 /* MCEmployeeProfileSectionTableViewCell.swift in Sources */,
+				5F30A2452206D9DB008A2699 /* MCPhoneContactRootObject.swift in Sources */,
+				5F30A2402206D4F0008A2699 /* MCOperationQueue.swift in Sources */,
 				5F5B4BC02200EAC400F957F3 /* JSONParameterEncoder.swift in Sources */,
 				5FDB4BF42202441600D4294F /* TallinnNetworkManager.swift in Sources */,
+				5F30A23122060403008A2699 /* ApplicationBarButtonItems.swift in Sources */,
 				5F10123F21FC4063004F9A90 /* MCEmployeesListTableViewDelegateDatasource.swift in Sources */,
 				5F5B4BBE2200EA8E00F957F3 /* URLParameterEncoding.swift in Sources */,
 				5FDB4BF72202447C00D4294F /* MCFetchTallinnEmployeesOperation.swift in Sources */,
 				5FD9D78221FB83D000E3B243 /* AppDelegate.swift in Sources */,
 				5FDB4C00220263DE00D4294F /* MCFetchTartuEmployeesOperation.swift in Sources */,
 				5F5B4BBC2200E9EA00F957F3 /* ParameterEncoding.swift in Sources */,
+				5F1CFA0E22078780004600D1 /* ApplicationArrays.swift in Sources */,
+				5F30A24B2206EEE9008A2699 /* ApplicationStrings.swift in Sources */,
 				5F10122721FB8BDD004F9A90 /* AppDelegate+Navigation.swift in Sources */,
 				5F10124B21FC4E09004F9A90 /* MCEmployeeRowTableViewCell.swift in Sources */,
+				5F27536D2204B9AC0065728B /* ApplicationColors.swift in Sources */,
 				5F10123721FB8F97004F9A90 /* MCEmployeesListView.swift in Sources */,
 				5F10122B21FB8CCD004F9A90 /* ApplicationConstants.swift in Sources */,
+				5F30A22B2205FDDE008A2699 /* MCEmployeeProfileHeaderTableViewCell.swift in Sources */,
+				5F30A2262205FDDE008A2699 /* MCEmployeeProfileHandler.swift in Sources */,
 				5FF2A1AC2201DCB60098F42B /* MCEmployeeRootObject.swift in Sources */,
-				5FDB4BEB2202433200D4294F /* NetworkOperationQueue.swift in Sources */,
+				5F30A2412206D4F0008A2699 /* MCOperationBase.swift in Sources */,
+				5F30A23A2206D43C008A2699 /* MCPhoneContactsOperation.swift in Sources */,
+				5F1CFA08220783F8004600D1 /* MCContactViewController.swift in Sources */,
+				5F1CFA122207A641004600D1 /* MCEmployeeCallSectionTableViewCell.swift in Sources */,
 				5F5B4BC42200EBD300F957F3 /* NetworkLogger.swift in Sources */,
+				5F30A2482206E0C1008A2699 /* MCUtilitiesClass.swift in Sources */,
 				5F10124921FC4E09004F9A90 /* MCEmployeeGroupTableViewCell.swift in Sources */,
 				5FDB4BD422023C9400D4294F /* NetworkConstants.swift in Sources */,
 			);
@@ -889,6 +1161,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R2NWF5B7RH;
 				INFOPLIST_FILE = "$(SRCROOT)/MCJobApp/ProjectSettings/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -907,6 +1180,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R2NWF5B7RH;
 				INFOPLIST_FILE = "$(SRCROOT)/MCJobApp/ProjectSettings/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MCFetchTallinnEmployeesOperation: NetworkOperationBase {
+class MCFetchTallinnEmployeesOperation: MCOperationBase {
     // MARK: Instance Variables
 
     // MARK: Overridden Methods
@@ -21,9 +21,34 @@ class MCFetchTallinnEmployeesOperation: NetworkOperationBase {
     
     override func handleDidFinishedWithResponse(response: Data!){
         do {
-            let employeesList = try JSONDecoder().decode(MCEmployeesListRootObject.self, from: response as Data)
+            // Addition of location key in the API response after casting the response from Data to Dictionary, adding new key/value pair and cast back to dictionary 
             
-            self.safeCallDidFinishSuccessfullyCallback(responseObject: employeesList as AnyObject)
+            var responseDictionary: [String: Any] = try JSONSerialization.jsonObject(with: response, options:[]) as! [String : Any] // from Data to Dictionary
+            
+            var employeesArray: [[String: Any]] = responseDictionary[String(Substring(MCEmployeesListRootObject.EmployeesRootApiResponseCodingKeys.employees.rawValue))] as! [[String : Any]] // Employees list
+            
+            for i in 0..<employeesArray.count { // Appending new key/value in the dictionary of each employee
+                var employee = employeesArray[i]
+                employee[String(Substring(MCEmployeeRootObject.EmployeeCodingKeys.location.rawValue))] = EmployeeLocation.kTallinnLocationName
+                
+                employeesArray[i] = employee
+            }
+            
+            responseDictionary[String(Substring(MCEmployeesListRootObject.EmployeesRootApiResponseCodingKeys.employees.rawValue))] = employeesArray
+            
+            do {
+                let responseData = try JSONSerialization.data(withJSONObject:responseDictionary) // Cast back from dictionary to Data
+                do {
+                    let employeesList = try JSONDecoder().decode(MCEmployeesListRootObject.self, from: responseData as Data)
+                    
+                    self.safeCallDidFinishSuccessfullyCallback(responseObject: employeesList as AnyObject)
+                } catch {
+                    self.handleDidFinishedWithError(error: error)
+                }
+                
+            } catch {
+                self.handleDidFinishedWithError(error: error)
+            }
         } catch {
             self.handleDidFinishedWithError(error: error)
         }

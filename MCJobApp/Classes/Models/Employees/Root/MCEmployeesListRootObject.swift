@@ -14,7 +14,7 @@ struct MCEmployeesListRootObject {
 
 extension MCEmployeesListRootObject: Decodable {
     
-    private enum EmployeesRootApiResponseCodingKeys: String, CodingKey {
+    public enum EmployeesRootApiResponseCodingKeys: String, CodingKey {
         case employees = "employees"
     }
     

@@ -1,5 +1,5 @@
 //
-//  NetworkOperationQueue.swift
+//  MCOperationQueue.swift
 //  MCJobApp
 //
 //  Created by Humayun Sohail on 1/30/19.
@@ -8,8 +8,7 @@
 
 import Foundation
 
-class NetworkOperationQueue: OperationQueue {
-    
+class MCOperationQueue: OperationQueue {
     //MARK: Class Variables
-    static public let sharedInstance = NetworkOperationQueue()
+    static public let sharedInstance = MCOperationQueue()
 }

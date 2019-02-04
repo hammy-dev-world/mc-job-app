@@ -1,5 +1,5 @@
 //
-//  NetworkResponse.swift
+//  NetworkResponseHandler.swift
 //  MCJobApp
 //
 //  Created by Humayun Sohail on 1/31/19.

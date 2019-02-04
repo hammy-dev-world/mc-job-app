@@ -21,21 +21,59 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EAK-Q8-GfU">
-                    <rect key="frame" x="0.0" y="10" width="375" height="667"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sru-sy-fFB">
+                    <rect key="frame" x="0.0" y="-10" width="375" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refreshing Reports" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vlv-zu-4k3">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="1aX-58-cTr"/>
+                        <constraint firstAttribute="bottom" secondItem="Vlv-zu-4k3" secondAttribute="bottom" id="EWb-Hv-BXj"/>
+                        <constraint firstAttribute="trailing" secondItem="Vlv-zu-4k3" secondAttribute="trailing" id="JvG-FI-pUw"/>
+                        <constraint firstItem="Vlv-zu-4k3" firstAttribute="top" secondItem="Sru-sy-fFB" secondAttribute="top" id="PC3-77-Plb"/>
+                        <constraint firstItem="Vlv-zu-4k3" firstAttribute="leading" secondItem="Sru-sy-fFB" secondAttribute="leading" id="aNz-DR-RaV"/>
+                    </constraints>
+                </view>
+                <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EAK-Q8-GfU">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Ec2-4E-uvu">
+                    <rect key="frame" x="177.5" y="333.5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="4qP-qu-mEi"/>
+                        <constraint firstAttribute="height" constant="20" id="G8z-w5-4pR"/>
+                    </constraints>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="EAK-Q8-GfU" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="2oK-GP-O9c"/>
-                <constraint firstItem="EAK-Q8-GfU" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="HiR-K2-TpX"/>
-                <constraint firstItem="EAK-Q8-GfU" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="mmX-tk-dm9"/>
-                <constraint firstItem="EAK-Q8-GfU" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="nUZ-u1-Mha"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EAK-Q8-GfU" secondAttribute="trailing" id="2Yq-t2-ney"/>
+                <constraint firstItem="EAK-Q8-GfU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="467-2l-tD0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="leading" secondItem="Sru-sy-fFB" secondAttribute="leading" id="6eC-WV-wGm"/>
+                <constraint firstItem="Ec2-4E-uvu" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="PbX-ge-9H2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="EAK-Q8-GfU" secondAttribute="bottom" id="Pxh-6n-kfY"/>
+                <constraint firstItem="Sru-sy-fFB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="-30" id="YrC-C7-VVX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Sru-sy-fFB" secondAttribute="trailing" id="gdH-PH-1qj"/>
+                <constraint firstItem="EAK-Q8-GfU" firstAttribute="top" secondItem="Vlv-zu-4k3" secondAttribute="bottom" id="s7R-sw-bxg"/>
+                <constraint firstItem="Ec2-4E-uvu" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="tSL-ak-2Cy"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="activityIndicator" destination="Ec2-4E-uvu" id="nP7-QV-QVY"/>
                 <outlet property="employeesListTableView" destination="EAK-Q8-GfU" id="Hwd-S1-4MY"/>
+                <outlet property="refreshView" destination="Sru-sy-fFB" id="GaT-t8-nXa"/>
+                <outlet property="refreshViewTopConstraint" destination="YrC-C7-VVX" id="4Oy-xo-Ic2"/>
             </connections>
         </view>
     </objects>

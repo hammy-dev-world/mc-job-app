@@ -1,5 +1,5 @@
 //
-//  NetworkOperationBase.swift
+//  MCOperationBase.swift
 //  MCJobApp
 //
 //  Created by Humayun Sohail on 1/30/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class NetworkOperationBase: Operation {
+class MCOperationBase: Operation {
     //MARK: Instance Variables
     var networkTask : URLSessionDataTask?
     
@@ -34,7 +34,6 @@ class NetworkOperationBase: Operation {
             didChangeValue(forKey: "isFinished")
         }
     }
-    
     
     //MARK: Callbacks
     public var didFinishWithErrorCallback : ((_ error: Error?) -> Void)?
@@ -71,7 +70,7 @@ class NetworkOperationBase: Operation {
     }
 }
 
-extension NetworkOperationBase {
+extension MCOperationBase {
     //MARK: Public methods
     @objc open func handleDidFinishedWithResponse(response: Data!){
         // To be overriden
