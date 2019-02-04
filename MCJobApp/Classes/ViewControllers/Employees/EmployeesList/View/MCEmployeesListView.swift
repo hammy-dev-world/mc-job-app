@@ -28,7 +28,6 @@ class MCEmployeesListView: UIView {
     
     //MARK: Private methods
     private func configureView() {
-
     }
     
     // MARK: Action Methods

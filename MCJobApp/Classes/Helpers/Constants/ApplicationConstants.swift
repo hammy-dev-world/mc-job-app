@@ -9,6 +9,9 @@
 import Foundation
 
 struct ApplicationStringConstants {
+    // MARK: Placeholders
+    static let kEmployeesSearchBarPlaceholder = "Search Employees"
+
 }
 
 struct ApplicationNavigationTitles {
@@ -21,14 +24,12 @@ struct ApplicationNumberConstants {
     // MARK: Navigation Bar
     static let kLeftBarButtonWidth = 30.0
     static let kLeftBarButtonHeight = 30.0
-    
 }
 
 
 struct ApplicationKeyStrings {
     // MARK: Employees
     static let kLocationKeyString = "location"
-
 }
 
 struct ApplicationResourceFilenames {
@@ -36,9 +37,6 @@ struct ApplicationResourceFilenames {
     static let kNavigationBackButton = "back"
     static let kNavigationCallButton = "call"
 
-}
-
-struct ApplicationURLs {
 }
 
 struct ApplicationInterfaceFilenames {
@@ -53,12 +51,24 @@ struct ApplicationInterfaceFilenames {
 }
 
 struct ApplicationAlertMessages {
-    // MARK: Common
+    // MARK: Titles
+    static let kAlertTitle = "Alert"
+
+    // MARK: Actions
+    static let kCancelAction = "Cancel"
+
+    // MARK: Messages
+    static let kNetworkErrorFetchingEmployees = "Something went wrong while fetching employees from the server."
+    static let kDeviceContactsErrorFetchingEmployees = "Something went wrong while fetching contacts from the device."
 }
 
 struct EmployeeLocation {
     static let kTallinnLocationName = "Tallinn"
     static let kTartuLocationName = "Tartu"
+}
 
+struct EmployeesCachingFilename {
+    static let kTallinnCachingFilename = "tallinn_filename"
+    static let kTartuCachingFilename = "tartu_filename"
 }
 

@@ -10,6 +10,7 @@ import Foundation
 
 class MCFetchTallinnEmployeesOperation: MCOperationBase {
     // MARK: Instance Variables
+    let cacher: Cacher = Cacher(destination: .temporary)
 
     // MARK: Overridden Methods
 
@@ -38,6 +39,17 @@ class MCFetchTallinnEmployeesOperation: MCOperationBase {
             
             do {
                 let responseData = try JSONSerialization.data(withJSONObject:responseDictionary) // Cast back from dictionary to Data
+                
+                let tallinnCachable = TallinnEmployeesListCachable(value: responseData)
+                
+                cacher.persist(item: tallinnCachable) { url, error in
+                    if let error = error {
+                        self.handleDidFinishedWithError(error: error)
+                    } else {
+                        print("Object persisted in \(String(describing: url))")
+                    }
+                }
+
                 do {
                     let employeesList = try JSONDecoder().decode(MCEmployeesListRootObject.self, from: responseData as Data)
                     

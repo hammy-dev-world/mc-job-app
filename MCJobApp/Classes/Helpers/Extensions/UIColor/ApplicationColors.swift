@@ -30,6 +30,9 @@ extension UIColor {
         return UIColor(red:67.0/255.0, green:67.0/255.0 ,blue:67.0/255.0 , alpha:1.00)
     }
 
+    class func employeeSearchBarTintColor() -> UIColor{
+        return UIColor(red:150.0/255.0, green:150.0/255.0 ,blue:150.0/255.0 , alpha:1.00)
+    }
 
 }
 

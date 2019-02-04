@@ -74,24 +74,15 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mrd-Nx-3KP">
-                                <rect key="frame" x="0.0" y="100" width="318" height="2"/>
-                                <color key="backgroundColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="D6G-kF-vgd"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="mrd-Nx-3KP" firstAttribute="leading" secondItem="Dq6-pW-biM" secondAttribute="leading" id="0gD-pP-EP7"/>
                             <constraint firstItem="dJP-1i-O5S" firstAttribute="trailing" secondItem="24o-Dt-FSc" secondAttribute="trailing" id="BNe-BS-5yt"/>
                             <constraint firstItem="M3L-EO-sRc" firstAttribute="leading" secondItem="Dq6-pW-biM" secondAttribute="leading" constant="20" id="Flr-T5-IUw"/>
                             <constraint firstItem="dJP-1i-O5S" firstAttribute="leading" secondItem="24o-Dt-FSc" secondAttribute="leading" id="G6Q-uU-6JY"/>
                             <constraint firstAttribute="trailing" secondItem="Jlo-CG-fwy" secondAttribute="trailing" constant="20" id="IoA-GP-dPa"/>
                             <constraint firstItem="AYe-dv-pLm" firstAttribute="leading" secondItem="dJP-1i-O5S" secondAttribute="leading" id="Q9F-lj-yEe"/>
                             <constraint firstItem="AYe-dv-pLm" firstAttribute="trailing" secondItem="dJP-1i-O5S" secondAttribute="trailing" id="SCA-Qz-JnV"/>
-                            <constraint firstItem="mrd-Nx-3KP" firstAttribute="bottom" secondItem="Dq6-pW-biM" secondAttribute="bottom" id="Ueh-9E-IUk"/>
                             <constraint firstItem="dJP-1i-O5S" firstAttribute="top" secondItem="24o-Dt-FSc" secondAttribute="bottom" constant="5" id="YAE-bv-S1B"/>
                             <constraint firstItem="Jlo-CG-fwy" firstAttribute="centerY" secondItem="Dq6-pW-biM" secondAttribute="centerY" id="bxc-cf-vs4"/>
                             <constraint firstItem="24o-Dt-FSc" firstAttribute="trailing" secondItem="Jlo-CG-fwy" secondAttribute="leading" constant="-20" id="eAS-zS-2Z5"/>
@@ -99,7 +90,6 @@
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="hfb-To-usV"/>
                             <constraint firstItem="24o-Dt-FSc" firstAttribute="top" secondItem="Dq6-pW-biM" secondAttribute="top" constant="21" id="jUB-r3-W2h"/>
                             <constraint firstItem="24o-Dt-FSc" firstAttribute="leading" secondItem="M3L-EO-sRc" secondAttribute="trailing" constant="10" id="oLB-wP-7cU"/>
-                            <constraint firstAttribute="trailing" secondItem="mrd-Nx-3KP" secondAttribute="trailing" id="q28-ft-yZT"/>
                             <constraint firstItem="M3L-EO-sRc" firstAttribute="top" secondItem="24o-Dt-FSc" secondAttribute="top" id="zrz-yu-wMZ"/>
                         </constraints>
                     </view>
@@ -120,7 +110,6 @@
                 <outlet property="emailAddressLabel" destination="AYe-dv-pLm" id="yi9-7x-Tgg"/>
                 <outlet property="firstNameLabel" destination="24o-Dt-FSc" id="YgJ-N6-am3"/>
                 <outlet property="phoneNumberLabel" destination="dJP-1i-O5S" id="3aq-fZ-aLx"/>
-                <outlet property="separatorView" destination="mrd-Nx-3KP" id="78J-EG-16V"/>
             </connections>
             <point key="canvasLocation" x="-223" y="-151"/>
         </tableViewCell>

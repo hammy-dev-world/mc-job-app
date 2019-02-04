@@ -22,14 +22,20 @@ class MCEmployeesListViewController: UIViewController {
 
     var handler: MCEmployeesListHandler!
 
-    var allEmployees: [MCEmployeeRootObject]! = []
+    var newEmployees: [MCEmployeeRootObject]! = []
+    var oldEmployees: [MCEmployeeRootObject]! = []
+    var filteredEmployees: [MCEmployeeRootObject]! = []
     
     var allContacts: [CNContact]! = []
 
     var contactStore: CNContactStore = CNContactStore()
 
     var refreshControl: UIRefreshControl!
+    
+    let cacher: Cacher = Cacher(destination: .temporary)
 
+    let searchController = UISearchController(searchResultsController: nil)
+    
     // MARK: View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +44,7 @@ class MCEmployeesListViewController: UIViewController {
         self.configureObjects()
         self.configureTableView()
         self.configureRefreshControl()
+        self.configureSearchBar()
         self.configureCallbacks()
         
         self.loadEmployees()
@@ -96,6 +103,16 @@ class MCEmployeesListViewController: UIViewController {
         self.refreshControl.addTarget(self, action:#selector(refreshControlPulled), for: .valueChanged)
     }
 
+    // MARK: Searchbar
+    private func configureSearchBar() {
+        self.searchController.searchResultsUpdater = self
+        self.searchController.obscuresBackgroundDuringPresentation = false
+        self.searchController.searchBar.placeholder = ApplicationStringConstants.kEmployeesSearchBarPlaceholder
+        
+        navigationItem.searchController = self.searchController
+        definesPresentationContext = true
+    }
+    
     // MARK: Callbacks
     private func configureCallbacks() {
         weak var weakSelf = self
@@ -141,20 +158,45 @@ class MCEmployeesListViewController: UIViewController {
         
         self.loadTallinnEmployees()
         self.loadTartuEmployees()
+        
+        if self.oldEmployees.count > 0 {
+            self.handleIntegrateEmployeesDataEvent(employees: self.oldEmployees)
+        }
     }
     
     private func loadTallinnEmployees() {
+        if let tallinnCachedEmployeesList: TallinnEmployeesListCachable = cacher.load(fileName: EmployeesCachingFilename.kTallinnCachingFilename) {
+            do {
+                let employeesList = try JSONDecoder().decode(MCEmployeesListRootObject.self, from: tallinnCachedEmployeesList.value as Data)
+                
+                self.oldEmployees = self.oldEmployees + employeesList.employees
+            } catch {
+                
+            }
+        }
+
         self.handler.requestFetchTallinnEmployeesDataAPI()
     }
     
     private func loadTartuEmployees() {
+        if let tartuCachedEmployeesList: TallinnEmployeesListCachable = cacher.load(fileName: EmployeesCachingFilename.kTartuCachingFilename) {
+            do {
+                let employeesList = try JSONDecoder().decode(MCEmployeesListRootObject.self, from: tartuCachedEmployeesList.value as Data)
+                
+                self.oldEmployees = self.oldEmployees + employeesList.employees
+            } catch {
+                
+            }
+        }
+
         self.handler.requestFetchTartuEmployeesDataAPI()
     }
 
     private func refreshEmployees() {
         self.showRefreshEmployeesListView()
         
-        self.allEmployees = [MCEmployeeRootObject]()
+        self.newEmployees = [MCEmployeeRootObject]()
+        self.oldEmployees = [MCEmployeeRootObject]()
 
         self.loadEmployees()
         self.loadDeviceContacts()
@@ -175,6 +217,47 @@ class MCEmployeesListViewController: UIViewController {
         UIView.animate(withDuration: EmployeesListViewControllerConstants.kRefreshEmployeeAnimationTime, animations: {
             self.employeesListView.refreshViewTopConstraint.constant =  -(self.employeesListView.refreshView.frame.height)
         }, completion: nil)
+    }
+    
+    private func showErrorAlertView(title: String, message: String) {
+        self.hideRefreshEmployeesListView()
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: ApplicationAlertMessages.kCancelAction, style: UIAlertAction.Style.default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+
+    // MARK: Search bar methods
+    func searchBarIsEmpty() -> Bool {
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    func isFiltering() -> Bool {
+        return self.searchController.isActive && !searchBarIsEmpty()
+    }
+    
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+        self.filteredEmployees = [MCEmployeeRootObject]()
+        
+        let filtered = self.newEmployees.filter{
+            $0.firstName.rawString.contains(searchText.rawString) ||
+                $0.lastName.rawString.contains(searchText.rawString) ||
+                $0.position.rawString.contains(searchText.rawString) ||
+                $0.contactDetails.emailAddress.rawString.contains(searchText.rawString)
+//                $0.projects.contains(where: { self.newEmployees.flatMap{$0.projects}.filter{$0.rawString.contains(searchText.rawString)}.unique{$0}.contains($0) })
+        }
+        
+        let projectFiltered = self.filterEmployeesOnProject(searchString: searchText.rawString)
+        
+        self.filteredEmployees = (self.filteredEmployees + filtered + projectFiltered).unique{$0.firstName + " " + $0.lastName}
+        
+        if searchText.count == 0 {
+            self.handleIntegrateEmployeesDataEvent(employees: self.newEmployees)
+        } else {
+            self.handleIntegrateEmployeesDataEvent(employees: self.filteredEmployees)
+        }
     }
 
     // MARK: Events
@@ -217,7 +300,7 @@ class MCEmployeesListViewController: UIViewController {
     @objc func refreshControlPulled() {
         self.refreshEmployees()
     }
-
+    
     // MARK: Network
     private func handleDeviceContactFetchingSuccessResponseEvent(contacts: [CNContact]) {
         self.handleChangeActivityIndicatorState(startAnimating: false)
@@ -229,47 +312,49 @@ class MCEmployeesListViewController: UIViewController {
         self.refreshControl.endRefreshing()
 
         self.handleChangeActivityIndicatorState(startAnimating: false)
+        
+        self.showErrorAlertView(title: ApplicationAlertMessages.kAlertTitle, message: ApplicationAlertMessages.kNetworkErrorFetchingEmployees)
     }
 
     private func handleFetchTallinnEmployeesResponseEvent(employeesList: MCEmployeesListRootObject) {        
-        self.allEmployees = self.allEmployees + employeesList.employees
+        self.handleNewFetchedEmployeesEvent(employees: employeesList.employees)
+    }
+    
+    private func handleFetchTartuEmployeesResponseEvent(employeesList: MCEmployeesListRootObject) {
+        self.handleNewFetchedEmployeesEvent(employees: employeesList.employees)
+    }
+
+    private func handleNewFetchedEmployeesEvent(employees: [MCEmployeeRootObject]) {
+        self.newEmployees = self.newEmployees + employees
         
         if MCOperationQueue.sharedInstance.operations.count == 0 {
+            self.refreshControl.endRefreshing()
+            self.hideRefreshEmployeesListView()
+            
             self.handleFinishFetchingEmployeesEvent()
         }
     }
     
-    private func handleFetchTartuEmployeesResponseEvent(employeesList: MCEmployeesListRootObject) {
-        self.allEmployees = self.allEmployees + employeesList.employees
-        
-        if MCOperationQueue.sharedInstance.operations.count == 0 {
-            self.handleFinishFetchingEmployeesEvent()
-        }
-    }
-
     private func handleErrorResponseEvent(error: Error) {
         self.refreshControl.endRefreshing()
 
         self.handleChangeActivityIndicatorState(startAnimating: false)
+        
+        self.showErrorAlertView(title: ApplicationAlertMessages.kAlertTitle, message: ApplicationAlertMessages.kNetworkErrorFetchingEmployees)
     }
     
     // MARK: Integration
     private func handleFinishFetchingEmployeesEvent() {
-        self.handleIntegrateEmployeesDataEvent()
+        self.handleIntegrateEmployeesDataEvent(employees: self.newEmployees)
     }
     
-    private func handleIntegrateEmployeesDataEvent() {
+    private func handleIntegrateEmployeesDataEvent(employees: [MCEmployeeRootObject]) {
         self.handleChangeActivityIndicatorState(startAnimating: false)
 
         self.loadDeviceContacts()
-
-        self.refreshControl.endRefreshing()
-
-        self.hideRefreshEmployeesListView()
         
-        self.allEmployees = self.allEmployees.unique{$0.firstName + " " + $0.lastName}.sorted(by: {$0.lastName < $1.lastName})
-
-        let sortedEmployees = Dictionary(grouping: self.allEmployees, by: { $0.position }).sorted{$0.0 < $1.0}
+        let uniqueEmployees = employees.unique{$0.firstName + " " + $0.lastName}.sorted(by: {$0.lastName < $1.lastName})
+        let sortedEmployees = Dictionary(grouping: uniqueEmployees, by: { $0.position }).sorted{$0.0 < $1.0}
 
         self.employeesTableViewDelegateDatasource?.employeesList = sortedEmployees
         self.employeesTableViewDelegateDatasource?.contactList = self.allContacts

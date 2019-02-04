@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MCEmployeesListViewController" customModule="MCJobApp" customModuleProvider="target">
             <connections>
@@ -24,7 +29,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sru-sy-fFB">
                     <rect key="frame" x="0.0" y="-10" width="375" height="30"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refreshing Reports" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vlv-zu-4k3">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fetching Employees" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vlv-zu-4k3">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -63,9 +68,9 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="leading" secondItem="Sru-sy-fFB" secondAttribute="leading" id="6eC-WV-wGm"/>
                 <constraint firstItem="Ec2-4E-uvu" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="PbX-ge-9H2"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="EAK-Q8-GfU" secondAttribute="bottom" id="Pxh-6n-kfY"/>
+                <constraint firstItem="EAK-Q8-GfU" firstAttribute="top" secondItem="Sru-sy-fFB" secondAttribute="bottom" id="Tx9-tA-eTs"/>
                 <constraint firstItem="Sru-sy-fFB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="-30" id="YrC-C7-VVX"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Sru-sy-fFB" secondAttribute="trailing" id="gdH-PH-1qj"/>
-                <constraint firstItem="EAK-Q8-GfU" firstAttribute="top" secondItem="Vlv-zu-4k3" secondAttribute="bottom" id="s7R-sw-bxg"/>
                 <constraint firstItem="Ec2-4E-uvu" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="tSL-ak-2Cy"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

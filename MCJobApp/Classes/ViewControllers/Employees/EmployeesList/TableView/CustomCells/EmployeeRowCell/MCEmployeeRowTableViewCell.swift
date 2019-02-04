@@ -17,8 +17,6 @@ class MCEmployeeRowTableViewCell: UITableViewCell {
 
     @IBOutlet weak var callButton: UIButton!
 
-    @IBOutlet weak var separatorView: UIView!
-
     @IBOutlet weak var emailAddressConstraint: NSLayoutConstraint!
 
     // MARK: Members
@@ -42,8 +40,6 @@ class MCEmployeeRowTableViewCell: UITableViewCell {
     // MARK: View
     private func configureView() {
         self.backgroundColor = UIColor.employeeRowBackgroundColor()
-        
-        self.separatorView.backgroundColor = UIColor.employeeGroupBackgroundColor()
         
         self.firstNameLabel.textColor = UIColor.darkTextColor()
         self.phoneNumberLabel.textColor = UIColor.darkTextColor()
