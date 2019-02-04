@@ -65,13 +65,90 @@ Root
                   Cell View // UITableViewCell subclassed and related implementations (IBOutlets, IBActions, View configurations etc)
                   Cell XIB // Custom Cell XIB
                 Custom Cell B
+                .............
+                Custom Cell N
               CollectionViews
               Other IBOutlets
               Handler (P of VIPER)
               // Contains local and remote operations to receive user input, pass on to the Interactor, receives the response and pass back to the View
             Screen B
           Group 2
-          Group 3
+          ....
+          Group N
+        Network
+          Servicing
+            EndPoint
+            HTTPMethod
+            HTTPTask
+            Logger
+            Router
+          Encoding
+            ParamterEncoding
+            JSONEncoding
+            URLEncoding
+          Response Handler
+          Manager
+            Server Manager 1
+            Server Manager 2
+            ................
+            Server Manager N
+          Operations
+            Server Manager 1
+              Group 1
+                Operation 1
+                Operation 2
+                ...........
+                Operation N
+              Group 2
+              .......
+              Group N
+            Server Manager 2
+            ................
+            Server Manager N
+          Constants
+        Models (E of VIPER)
+          Group 1
+            Root
+              Object 1
+              Object 2
+              ........
+              Object N
+          Group 2
+          .......
+          Group N
+        Helpers
+          ThirdParties
+            Library 1
+            Library 2
+            .........
+            Library N
+          Utilities
+          OperationQueue
+            Base
+            Queue
+          Local Operations
+            Server Manager 1
+              Group 1
+                Operation 1
+                Operation 2
+                ...........
+                Operation N
+              Group 2
+              .......
+              Group N
+            Server Manager 2
+            ................
+            Server Manager N
+          Extensions
+            Extension 1
+            Extension 2
+            ,,,,,,,,,,,
+            Extension N
+          Constants
+            Constants A
+            Constants B
+            ..........
+            Constants Z
     Project Settings
       info.plist
     Resources
@@ -85,8 +162,6 @@ Root
     UITests
   Products
     .app
-
-
 ```
 
 
