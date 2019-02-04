@@ -164,7 +164,46 @@ Root
     .app
 ```
 
+## Features
 
+- Fetch all employees from both servers.
+- Show them in the list after removing the duplicates one.
+- Fetch device contacts to have call option within the app.
+- Employee Profile with all the details (firstName, lastName, position, projects, contact details).
+- Caching fetched employees and update on new response.
+- Search employes by firstName, lastName, position, projects, contact details.
 
+## How it works?
 
-## Explanations
+###### How search works?:
+Search is implemented by using higher order functions available in Swift.
+
+```swift
+let filtered = self.newEmployees.filter{
+    $0.firstName.rawString.contains(searchText.rawString) ||
+        $0.lastName.rawString.contains(searchText.rawString) ||
+        $0.position.rawString.contains(searchText.rawString) ||
+        $0.contactDetails.emailAddress.rawString.contains(searchText.rawString)
+}
+
+func filterEmployeesOnProject(searchString: String) -> [MCEmployeeRootObject] {
+    var filtered: [MCEmployeeRootObject]! = []
+
+    for employee in self.newEmployees {
+        let projects = employee.projects
+
+        let filteredStrings = projects.filter({(project: String) -> Bool in
+            let stringMatch = project.rawString.range(of: searchString.rawString)
+            return stringMatch != nil ? true : false
+        })
+
+        if filteredStrings.count > 0 {
+            filtered.append(employee)
+        }
+    }
+
+    return filtered
+}
+```
+
+The above filter is finding searched text as a substring in firstName, lastName, position, contact details to have complete scope of search. There are chances that a record is duplicate by falling multiple cases in the closure so all the duplicated are removed on the search results array.
