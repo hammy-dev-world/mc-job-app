@@ -1,4 +1,4 @@
-# mc-job-app
+# Job Application
 
 ## Requirements
 
