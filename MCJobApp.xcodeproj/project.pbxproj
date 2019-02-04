@@ -550,12 +550,12 @@
 		5F5B4BB22200E69200F957F3 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				5F5B4BB32200E7B400F957F3 /* Servicing */,
+				5F5B4BBA2200E9CC00F957F3 /* Encoding */,
 				5FDB4BFB2202481300D4294F /* Response */,
 				5FDB4BEE2202441600D4294F /* Managers */,
 				5FDB4BE32202433200D4294F /* Operations */,
 				5FDB4BD222023C8200D4294F /* Constants */,
-				5F5B4BBA2200E9CC00F957F3 /* Encoding */,
-				5F5B4BB32200E7B400F957F3 /* Servicing */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -1199,6 +1199,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R2NWF5B7RH;
 				INFOPLIST_FILE = "$(SRCROOT)/MCJobApp/ProjectSettings/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1218,6 +1219,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R2NWF5B7RH;
 				INFOPLIST_FILE = "$(SRCROOT)/MCJobApp/ProjectSettings/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
